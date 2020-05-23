@@ -20,7 +20,6 @@ spring:
               predicates:
               - Path=/oauth/**
               filters:
-              - AddResponseHeader = Access-Control-Allow-Origin, *
               - DedupeResponseHeader = Access-Control-Allow-Credentials Access-Control-Allow-Origin
             - id: toures-balon-producto-ciudad
               uri: lb://TOURES-BALON-PRODUCTO-CIUDAD

@@ -55,6 +55,14 @@ spring:
               uri: lb://TOURESBALON-PROVEEDOR-EVENTO-DISPONIBILIDAD
               predicates:
               - Path=/proveedor/evento/disponibilidad/**  
+            - id: touresbalon-proveedor-terrestre
+              uri: lb://TOURESBALON-PROVEEDOR-TERRESTRE
+              predicates:
+              - Path=/proveedor/terrestre,/proveedor/terrestre/plantilla-consulta,/proveedor/terrestre/auth
+            - id: touresbalon-proveedor-terrestre-disponibilidad
+              uri: lb://TOURESBALON-PROVEEDOR-TERRESTRE-DISPONIBILIDAD
+              predicates:
+              - Path=/proveedor/terrestre/disponibilidad/**  
             - id: toures-balon-configuracion
               uri: lb://TOURES-BALON-CONFIGURACION
               predicates:

@@ -11,9 +11,9 @@ spring:
                   '[/**]':
                     allowedOrigins: "*"
                     allowed-methods:
-                    - "*"
+                    - "DELETE, POST, GET, OPTIONS"
                     allowed-headers:
-                    - "*"
+                    - "Content-Type, Access-Control-Allow-Headers, Authorization, X-Requested-With"
                     allow-credentials: true
             routes:
             - id: toures-balon-usuario

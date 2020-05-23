@@ -5,6 +5,16 @@ spring:
     zipkin:
      base-url: http://192.168.0.6:9411/
     cloud:
+         gateway:
+            globalcors:
+                corsConfigurations:
+                  '[/**]':
+                    allowedOrigins: "*"
+                    allowed-methods:
+                    - "*"
+                    allowed-headers:
+                    - "*"
+                    allow-credentials: true
             routes:
             - id: toures-balon-usuario
               uri: lb://TOURES-BALON-USUARIO #http://172.17.0.6:9091

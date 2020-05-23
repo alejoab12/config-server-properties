@@ -21,6 +21,7 @@ spring:
               - Path=/oauth/**
               filters:
               - AddResponseHeader=Access-Control-Allow-Origin, *
+              - RewritePath=/oauth/(?<segment>.*), /$\{segment}
             - id: toures-balon-producto-ciudad
               uri: lb://TOURES-BALON-PRODUCTO-CIUDAD
               predicates:

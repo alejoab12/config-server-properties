@@ -20,9 +20,9 @@ spring:
               predicates:
               - Path=/oauth/**
               filters:
-              - AddResponseHeader = Access-Control-Allow-Origin , *
-              - AddResponseHeader = Access-Control-Allow-Methods , *
-              - AddResponseHeader = Access-Control-Allow-Headers , *
+              - AddResponseHeader=Access-Control-Allow-Origin , *
+              - AddResponseHeader=Access-Control-Allow-Methods , *
+              - AddResponseHeader=Access-Control-Allow-Headers , *
             - id: toures-balon-producto-ciudad
               uri: lb://TOURES-BALON-PRODUCTO-CIUDAD
               predicates:

@@ -28,10 +28,6 @@ spring:
               uri: lb://TOURES-BALON-OAUTH
               predicates:
               - Path=/oauth/**
-              filters:
-              - AddResponseHeader=Access-Control-Allow-Origin , *
-              - AddResponseHeader=Access-Control-Allow-Methods , *
-              - AddResponseHeader=Access-Control-Allow-Headers , *
             - id: toures-balon-producto-ciudad
               uri: lb://TOURES-BALON-PRODUCTO-CIUDAD
               predicates:

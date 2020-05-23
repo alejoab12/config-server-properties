@@ -95,7 +95,7 @@ eureka:
   instance:
     prefer-ip-address: true
 oauth:
-  enabled: true
+  enabled: false
   jwt:
     issuer: angular
     password: droptable2020..

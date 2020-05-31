@@ -8,7 +8,7 @@ spring:
     name: toures-balon-proveedor
   data:
     mongodb:
-      uri:  mongodb://172.17.0.6/proveedor
+      uri:  mongodb://127.0.0.1/proveedor
       port: 27017
       password:
       username: 

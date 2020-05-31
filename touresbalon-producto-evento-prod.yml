@@ -9,7 +9,7 @@ spring:
     name: touresbalon-producto-evento
   data:
     mongodb:
-      uri:  mongodb://172.17.0.9/touresbalon-producto-evento
+      uri:  mongodb://127.0.0.1/touresbalon-producto-evento
       port: 27017
       password:
       username: 

@@ -8,7 +8,7 @@ spring:
     name: toures-balon-producto-hospedaje
   data:
     mongodb:
-      uri:  mongodb://172.17.0.6/touresbalon-producto-hospedaje
+      uri:  mongodb://127.0.0.1/touresbalon-producto-hospedaje
       port: 27017
       password:
       username: 

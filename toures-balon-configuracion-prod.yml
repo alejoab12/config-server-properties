@@ -7,7 +7,7 @@ spring:
   application:
     name: toures-balon-configuracion
   redis:
-    host: 192.168.0.6
+    host: 127.0.0.1
   profiles:
     active: prod
 server:

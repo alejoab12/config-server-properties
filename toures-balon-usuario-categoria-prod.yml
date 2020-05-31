@@ -21,9 +21,9 @@ spring:
   jpa:
     show-sql: true
   datasource:
-    url: jdbc:mysql://172.17.0.5:3306/toures-balon-categoria
+    url: jdbc:mysql://127.0.0.1:3306/toures-balon-categoria
     username: root
-    password: root
+    password: m22102013M..
   profiles: 
     active:
     - dev

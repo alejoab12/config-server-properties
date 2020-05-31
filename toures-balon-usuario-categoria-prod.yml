@@ -24,9 +24,6 @@ spring:
     url: jdbc:mysql://127.0.0.1:3306/toures-balon-categoria
     username: root
     password: m22102013M..
-  profiles: 
-    active:
-    - dev
 gema:
   kafka:
     producer:

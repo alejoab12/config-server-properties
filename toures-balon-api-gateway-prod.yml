@@ -92,7 +92,7 @@ spring:
             - id: toures-balon-usuario-categoria
               uri: lb://TOURES-BALON-USUARIO-CATEGORIA
               predicates:
-              - Path=/categoria/**,/categoria/beneficio/**,/categoria/transaccion/**
+              - Path=/categoria/beneficio/**,/categoria/transaccion/**
 eureka:
   client:
     serviceUrl:

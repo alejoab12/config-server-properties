@@ -20,6 +20,8 @@ spring:
      base-url: http://192.168.0.6:9411/
   jpa:
     show-sql: true
+    hibernate:
+      ddl-auto: update
   datasource:
     url: jdbc:mysql://127.0.0.1:3306/toures-balon-categoria
     username: root

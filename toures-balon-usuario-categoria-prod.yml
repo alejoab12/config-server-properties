@@ -4,7 +4,6 @@ spring:
 server:
   port: 0
 ---
-
 eureka:
   client:
   #  service-url: {"http://toures-balon-discovery:8761/eureka"}
@@ -35,7 +34,6 @@ gema:
       bootstrap-server: htpp://192.168.0.6:29092
     consumer:
       enabled: true
-      bootstrap-server: htpp://192.168.0.6:29092
-      
+      bootstrap-server: htpp://192.168.0.6:29092    
 dividing-factor: 1000
  

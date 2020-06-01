@@ -89,6 +89,12 @@ spring:
               uri: lb://TOURES-BALON-ORDEN
               predicates:
               - Path=/orden/**  
+            - id: toures-balon-usuario-categoria
+              uri: lb://TOURES-BALON-USUARIO-CATEGORIA
+              predicates:
+              - Path=/categoria/**
+              - Path=/beneficio/**
+              - Path=/transaccion/**
 eureka:
   client:
     serviceUrl:
@@ -109,6 +115,9 @@ oauth:
       - \/carro.*
       - \/campana.*
       - \/orden.*
+      - \/categoria.*
+      - \/beneficio.*
+      - \/transaccion.*
     - method: GET
       paths:
       - \/configuracion.*
@@ -116,14 +125,23 @@ oauth:
       - \/campana.*
       - \/proveedor.*
       - \/orden.*
+      - \/categoria.*
+      - \/beneficio.*
+      - \/transaccion.*
     - method: PUT
       paths:
       - \/configuracion.*
       - \/proveedor.*
+      - \/categoria.*
+      - \/beneficio.*
+      - \/transaccion.*
     - method: DELETE
       paths:
       - \/configuracion.*
       - \/carro.*
+      - \/categoria.*
+      - \/beneficio.*
+      - \/transaccion.*
     matchers-with-role:
     - method: GET
       paths:

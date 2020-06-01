@@ -13,6 +13,8 @@ spring:
     url: jdbc:mysql://127.0.0.1:3306/toures_domain_usuario
     username: root
     password: m22102013M..
+    initialization-mode: always
+    platform: mysql
   application:
     name: toures-balon-usuario
 eureka:

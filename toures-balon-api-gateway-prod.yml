@@ -93,8 +93,6 @@ spring:
               uri: lb://TOURES-BALON-USUARIO-CATEGORIA
               predicates:
               - Path=/categoria/**
-              - Path=/beneficio/**
-              - Path=/transaccion/**
 eureka:
   client:
     serviceUrl:

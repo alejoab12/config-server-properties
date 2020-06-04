@@ -16,7 +16,7 @@ spring:
       ddl-auto: update
 
   datasource:
-    url: jdbc:mysql://127.0.0.1:3306/toures_domain_orden?createDatabaseIfNotExist=true&useUnicode=true&useJDBCCompliantTimezoneShift=true&useLegacyDatetimeCode=false&serverTimezone=UTC
+    url: jdbc:mysql://192.168.0.6:3306/toures_domain_orden?createDatabaseIfNotExist=true&useUnicode=true&useJDBCCompliantTimezoneShift=true&useLegacyDatetimeCode=false&serverTimezone=UTC
     username: root
     password: m22102013M..
   application:

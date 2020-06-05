@@ -97,6 +97,10 @@ spring:
               uri: lb://TOURES-BALON-USUARIO-CATEGORIA
               predicates:
               - Path=/categoria/**,/categoria/beneficio/**,/categoria/transaccion/**
+            - id: example-service
+              uri: lb://example-service
+              predicates:
+              - Path=/testkubernetes
 eureka:
   client:
     serviceUrl:

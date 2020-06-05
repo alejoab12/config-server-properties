@@ -90,7 +90,7 @@ spring:
               predicates:
               - Path=/campana/**  
             - id: toures-balon-orden
-              uri: http://orden-service:8080
+              uri: http://10.152.183.200:8080
               predicates:
               - Path=/orden/**  
             - id: toures-balon-usuario-categoria

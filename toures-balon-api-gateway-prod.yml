@@ -134,6 +134,7 @@ oauth:
       - \/categoria.*
       - \/beneficio.*
       - \/transaccion.*
+      - \/testkubernetes.*
     - method: PUT
       paths:
       - \/configuracion.*

@@ -90,7 +90,7 @@ spring:
               predicates:
               - Path=/campana/**  
             - id: toures-balon-orden
-              uri: http://orden-service
+              uri: lb://orden-service
               predicates:
               - Path=/orden/**  
             - id: toures-balon-usuario-categoria

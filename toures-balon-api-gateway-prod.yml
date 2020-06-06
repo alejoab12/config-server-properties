@@ -42,35 +42,35 @@ spring:
               predicates:
               - Path=/producto/transporte/**
             - id: touresbalon-proveedor-hospedaje
-              uri: lb://TOURESBALON-PROVEEDOR-HOSPEDAJE
+              uri: lb://touresbalon-proveedor-hospedaje
               predicates:
               - Path=/proveedor/hospedaje,/proveedor/hospedaje/plantilla-consulta,/proveedor/hospedaje/auth
             - id: touresbalon-proveedor-hospedaje-disponibilidad
-              uri: lb://TOURESBALON-PROVEEDOR-HOSPEDAJE-DISPONIBILIDAD
+              uri: lb://touresbalon-proveedor-hospedaje-disponibilidad
               predicates:
               - Path=/proveedor/hospedaje/disponibilidad/**
             - id: touresbalon-proveedor-vuelo
-              uri: lb://TOURESBALON-PROVEEDOR-VUELO
+              uri: lb://touresbalon-proveedor-vuelo
               predicates:
               - Path=/proveedor/vuelo,/proveedor/vuelo/plantilla-consulta,/proveedor/vuelo/auth
             - id: touresbalon-proveedor-vuelo-disponibilidad
-              uri: lb://TOURESBALON-PROVEEDOR-VUELO-DISPONIBILIDAD
+              uri: lb://touresbalon-proveedor-vuelo-disponibilidad
               predicates:
               - Path=/proveedor/vuelo/disponibilidad/**  
             - id: touresbalon-proveedor-evento
-              uri: lb://TOURESBALON-PROVEEDOR-EVENTO
+              uri: lb://touresbalon-proveedor-evento
               predicates:
               - Path=/proveedor/evento,/proveedor/evento/plantilla-consulta,/proveedor/evento/auth
             - id: touresbalon-proveedor-evento-disponibilidad
-              uri: lb://TOURESBALON-PROVEEDOR-EVENTO-DISPONIBILIDAD
+              uri: lb://touresbalon-proveedor-evento-disponibilidad
               predicates:
               - Path=/proveedor/evento/disponibilidad/**  
             - id: touresbalon-proveedor-terrestre
-              uri: lb://TOURESBALON-PROVEEDOR-TERRESTRE
+              uri: lb://touresbalon-proveedor-terrestre
               predicates:
               - Path=/proveedor/terrestre,/proveedor/terrestre/plantilla-consulta,/proveedor/terrestre/auth
             - id: touresbalon-proveedor-terrestre-disponibilidad
-              uri: lb://TOURESBALON-PROVEEDOR-TERRESTRE-DISPONIBILIDAD
+              uri: lb://touresbalon-proveedor-terrestre-disponibilidad
               predicates:
               - Path=/proveedor/terrestre/disponibilidad/**  
             - id: toures-balon-configuracion

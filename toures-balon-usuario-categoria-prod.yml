@@ -2,28 +2,21 @@ spring:
   application:
     name: toures-balon-usuario-categoria
 server:
-  port: 0
+  port: 8080
 ---
-eureka:
-  client:
-  #  service-url: {"http://toures-balon-discovery:8761/eureka"}
-    serviceUrl:
-      defaultZone: "http://192.168.0.6:8761/eureka"
-  instance:
-    prefer-ip-address: true
 spring:
   sleuth:
      sampler:
        probability: 1.0
   zipkin:
-    base-url: http://192.168.0.6:9411/
+    base-url: http://192.168.0.92:9411/
   jpa:
     show-sql: true
     hibernate:
       ddl-auto: update
   datasource:
-    url: jdbc:mysql://127.0.0.1:3306/toures_balon_categoria?createDatabaseIfNotExist=true&useUnicode=true&useJDBCCompliantTimezoneShift=true&useLegacyDatetimeCode=false&serverTimezone=UTC
-    username: root
+    url: jdbc:mysql://192.168.0.92:3306/toures_balon_categoria?createDatabaseIfNotExist=true&useUnicode=true&useJDBCCompliantTimezoneShift=true&useLegacyDatetimeCode=false&serverTimezone=UTC
+    username: gemadb
     password: m22102013M..
     initialization-mode: always
     platform: mysql
@@ -31,8 +24,8 @@ gema:
   kafka:
     producer:
       enabled: true
-      bootstrap-server: htpp://192.168.0.6:29092
+      bootstrap-server: htpp://192.168.0.92:29092
     consumer:
       enabled: true
-      bootstrap-server: htpp://192.168.0.6:29092    
+      bootstrap-server: htpp://192.168.0.92:29092    
 dividing-factor: 1000

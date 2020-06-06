@@ -74,7 +74,7 @@ spring:
               predicates:
               - Path=/proveedor/terrestre/disponibilidad/**  
             - id: toures-balon-configuracion
-              uri: lb://TOURES-BALON-CONFIGURACION
+              uri: lb://toures-balon-configuracion-service
               predicates:
               - Path=/configuracion/**
             - id: toures-balon-carro
@@ -82,7 +82,7 @@ spring:
               predicates:
               - Path=/carro/**  
             - id: toures-balon-campana
-              uri: lb://TOURES-BALON-CAMPANA
+              uri: lb://toures-balon-campana-service
               predicates:
               - Path=/campana/**  
             - id: toures-balon-orden
@@ -90,7 +90,7 @@ spring:
               predicates:
               - Path=/orden/**  
             - id: toures-balon-usuario-categoria
-              uri: lb://TOURES-BALON-USUARIO-CATEGORIA
+              uri: lb://toures-balon-usuario-categoria-service
               predicates:
               - Path=/categoria/**,/categoria/beneficio/**,/categoria/transaccion/**
 eureka:

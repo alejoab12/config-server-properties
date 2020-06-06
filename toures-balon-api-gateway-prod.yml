@@ -124,6 +124,7 @@ oauth:
       - \/categoria.*
       - \/beneficio.*
       - \/transaccion.*
+      - \/usuario.*
     - method: GET
       paths:
       - \/configuracion.*
@@ -135,6 +136,7 @@ oauth:
       - \/beneficio.*
       - \/transaccion.*
       - \/testkubernetes.*
+      - \/usuario.*
     - method: PUT
       paths:
       - \/configuracion.*
@@ -152,7 +154,6 @@ oauth:
     matchers-with-role:
     - method: GET
       paths:
-      - \/usuario.*
       - \/producto.*
       roles:
         - ROLE_ADMIN

@@ -94,7 +94,7 @@ spring:
               predicates:
               - Path=/categoria/**,/categoria/beneficio/**,/categoria/transaccion/** 
             - id: touresbalon-orden-carro
-              uri: http://10.152.183.137:80
+              uri: http://10.152.183.137:8080
               predicates:
               - Path=/api/carros/**
 eureka:

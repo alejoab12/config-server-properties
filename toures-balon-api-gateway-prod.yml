@@ -30,13 +30,9 @@ spring:
               predicates:
               - Path=/producto/hospedaje/**
             - id: toures-balon-oauth
-              uri: lb://TOURES-BALON-OAUTH
+              uri: lb://toures-balon-oauth-service
               predicates:
               - Path=/oauth/**
-            - id: toures-balon-producto-ciudad
-              uri: lb://TOURES-BALON-PRODUCTO-CIUDAD
-              predicates:
-              - Path=/producto/ciudad/**
             - id: touresbalon-producto-evento
               uri: lb://TOURESBALON-PRODUCTO-EVENTO
               predicates:

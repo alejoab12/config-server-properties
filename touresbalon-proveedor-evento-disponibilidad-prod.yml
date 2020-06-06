@@ -3,20 +3,12 @@ spring:
     sampler:
       probability: 1.0
   zipkin:
-    base-url: http://192.168.0.6:9411/
+    base-url: http://192.168.0.92:9411/
   application:
     name: touresbalon-proveedor-evento-disponibilidad
 server:
-  port: 0
-eureka:
-  client:
-  #  service-url: {"http://toures-balon-discovery:8761/eureka"}
-    serviceUrl:
-      defaultZone: "http://192.168.0.6:8761/eureka"
-  instance:
-    prefer-ip-address: true
-    
-    
+  port: 8080
+        
 resilience4j:
     circuitbreaker:
         configs:

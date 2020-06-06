@@ -9,22 +9,16 @@ spring:
     sampler:
     probability: 1.0
   zipkin:
-    base-url: http://192.168.0.6:9411/
+    base-url: http://192.168.0.92:9411/
   jpa:
     show-sql: true
     hibernate:
       ddl-auto: update
 
   datasource:
-    url: jdbc:mysql://192.168.0.6:3306/toures_domain_orden?createDatabaseIfNotExist=true&useUnicode=true&useJDBCCompliantTimezoneShift=true&useLegacyDatetimeCode=false&serverTimezone=UTC
-    username: gema
+    url: jdbc:mysql://192.168.0.92:3306/toures_domain_orden?createDatabaseIfNotExist=true&useUnicode=true&useJDBCCompliantTimezoneShift=true&useLegacyDatetimeCode=false&serverTimezone=UTC
+    username: gemadb
     password: m22102013M..
   application:
     name: toures-balon-orden
-eureka:
-  client:
-    #  service-url: {"http://toures-balon-discovery:8761/eureka"}
-    serviceUrl:
-      defaultZone: "http://192.168.0.6:8761/eureka"
-  instance:
-    prefer-ip-address: true
+

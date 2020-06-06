@@ -1,9 +1,9 @@
 server:
-  port: 8676
+  port: 8080
 ---
 spring:
   minio:
-    url: http://192.168.0.6:9000
+    url: http://192.168.0.92:9000
     bucket: toures-balon
     access-key: minioadmin
     secret-key: minioadmin
@@ -19,11 +19,5 @@ spring:
     sampler:
       probability: 1.0
   zipkin:
-    base-url: http://192.168.0.6:9411/
-eureka:
-  client:
-    serviceUrl:
-      defaultZone: "http://192.168.0.6:8761/eureka"
-    instance:
-      prefer-ip-address: true
+    base-url: http://192.168.0.92:9411/
 

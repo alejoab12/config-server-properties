@@ -22,7 +22,7 @@ spring:
 
             routes:
             - id: toures-balon-usuario
-              uri: lb://TOURES-BALON-USUARIO #http://172.17.0.6:9091
+              uri: lb://toures-balon-usuario-service
               predicates:
               - Path=/usuario/**
             - id: toures-balon-producto-hospedaje

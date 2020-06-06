@@ -92,7 +92,11 @@ spring:
             - id: toures-balon-usuario-categoria
               uri: lb://toures-balon-usuario-categoria-service
               predicates:
-              - Path=/categoria/**,/categoria/beneficio/**,/categoria/transaccion/**
+              - Path=/categoria/**,/categoria/beneficio/**,/categoria/transaccion/** 
+            - id: touresbalon-orden-carro
+              uri: http://10.152.183.137:8080
+              predicates:
+              - Path=/api/carros/**
 eureka:
   client:
     serviceUrl:
@@ -117,6 +121,7 @@ oauth:
       - \/beneficio.*
       - \/transaccion.*
       - \/usuario.*
+      - \/api/carros.*
     - method: GET
       paths:
       - \/configuracion.*
@@ -129,6 +134,7 @@ oauth:
       - \/transaccion.*
       - \/testkubernetes.*
       - \/usuario.*
+      - \/api/carros.*
     - method: PUT
       paths:
       - \/configuracion.*
